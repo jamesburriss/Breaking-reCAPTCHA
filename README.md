@@ -2,7 +2,7 @@
 
 ## A dissertation project, achieving an overall 80% accuracy
 
-![Traffic Light Image Detection](https://ibb.co/K0H4YGN)
+![Traffic Light Image Detection](https://i.ibb.co/HFQw02N/Untitled-2.png)
 
 The program can be tuned using the below code to work with a variety of reCAPTCHA scenarios.
 
