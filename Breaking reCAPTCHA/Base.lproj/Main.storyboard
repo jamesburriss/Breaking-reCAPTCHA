@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r" initialMenu="gf7-va-6nC">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Menu-->
+        <scene sceneID="w4N-QX-mKK">
+            <objects>
+                <menu isSystemItem="YES" title="Main Menu" identifier="com.apple.menu.root" id="gf7-va-6nC" sceneMemberID="viewController">
+                    <children>
+                        <menu isSystemItem="YES" title="Application" identifier="com.apple.menu.application" id="vkZ-Vl-tbA">
+                            <children>
+                                <menu isSystemItem="YES" title="Prefs" identifier="com.apple.menu.preferences" id="3s7-Vf-NXx">
+                                    <menuOptions key="menuOptions" displayInline="YES"/>
+                                    <systemMenuChildDeletions>
+                                        <itemDeletion anchorAction="orderFrontPreferencesPanel:"/>
+                                    </systemMenuChildDeletions>
+                                </menu>
+                            </children>
+                            <systemMenuChildDeletions>
+                                <menuDeletion anchor="com.apple.menu.services"/>
+                            </systemMenuChildDeletions>
+                        </menu>
+                        <menu isSystemItem="YES" title="File" identifier="com.apple.menu.file" id="XEg-aw-PH5">
+                            <children>
+                                <menu isSystemItem="YES" title="Print" identifier="com.apple.menu.print" id="EPi-Q1-XOo">
+                                    <menuOptions key="menuOptions" displayInline="YES"/>
+                                    <systemMenuChildDeletions>
+                                        <itemDeletion anchorAction="saveDocumentToPDF:"/>
+                                        <itemDeletion anchorAction="printDocument:"/>
+                                    </systemMenuChildDeletions>
+                                </menu>
+                            </children>
+                        </menu>
+                        <menu isSystemItem="YES" title="Window" identifier="com.apple.menu.window" id="CxI-dk-evM">
+                            <children>
+                                <menu isSystemItem="YES" title="Minimize And Zoom" identifier="com.apple.menu.minimize-and-zoom" id="Giu-sj-YrM">
+                                    <menuOptions key="menuOptions" displayInline="YES"/>
+                                    <systemMenuChildDeletions>
+                                        <itemDeletion anchorAction="performZoom:"/>
+                                    </systemMenuChildDeletions>
+                                </menu>
+                            </children>
+                        </menu>
+                    </children>
+                    <systemMenuChildDeletions>
+                        <menuDeletion anchor="com.apple.menu.edit"/>
+                        <menuDeletion anchor="com.apple.menu.format"/>
+                        <menuDeletion anchor="com.apple.menu.view"/>
+                        <menuDeletion anchor="com.apple.menu.help"/>
+                    </systemMenuChildDeletions>
+                </menu>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RXA-7P-6dq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-781" y="-315"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Breaking_reCAPTCHA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DQg-vF-sN2">
+                                <rect key="frame" x="118.5" y="436.5" width="177.5" height="23"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Rv4-xF-W4j">
+                                        <rect key="frame" x="0.0" y="1.5" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose an image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ml1-MX-mMN">
+                                        <rect key="frame" x="30" y="0.0" width="147.5" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R9v-as-VxV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R9v-as-VxV" secondAttribute="trailing" id="2zR-Z0-Fwm"/>
+                            <constraint firstItem="R9v-as-VxV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7vp-0h-qea"/>
+                            <constraint firstItem="R9v-as-VxV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Xr6-kb-zL9"/>
+                            <constraint firstItem="DQg-vF-sN2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y8B-yG-gM0"/>
+                            <constraint firstAttribute="bottom" secondItem="R9v-as-VxV" secondAttribute="bottom" id="tqE-Zm-ymZ"/>
+                            <constraint firstItem="DQg-vF-sN2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zuX-ih-fhu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="Rv4-xF-W4j" id="kx6-iO-Obg"/>
+                        <outlet property="imageView" destination="R9v-as-VxV" id="kl5-G7-daG"/>
+                        <outlet property="label" destination="ml1-MX-mMN" id="Pqy-1D-yEL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+</document>
